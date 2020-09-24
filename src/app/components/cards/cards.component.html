@@ -1,8 +1,13 @@
-<!-- <div *ngFor="let titulo of titulos" class="title">
-  <div class="cards">
-    <h2>{{ titulo.name }}</h2>
+<h1 class="titulo">Trello</h1>
+<div class="container">
+  <div class="tareas" *ngFor="let titulo of titulos">
+    <h4 class="tareasTitulo">{{ titulo.name }}</h4>
+    <div class="items1" [sortablejs]="item" [sortablejsOptions]="options">
+      <!-- resultado del from -->
+      <p>Li</p>
+      <div *ngFor="let item of items1">{{ item }}</div>
+    </div>
+    <!-- Formulario -->
+    <app-form></app-form>
   </div>
-  <app-list *ngFor="let item of items" [tarea]="item"></app-list>
 </div>
-
- -->

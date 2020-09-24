@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+body {
+  background-color: #0079bf;
+  font-family: "Ubuntu", sans-serif;
+  /* font-family: 'Dancing Script', cursive; */
+}
+.titulo {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  text-transform: capitalize;
+  color: #7fb3d1;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.tareas {
+  width: 233px;
+  height: auto;
+  background-color: #ebecf0;
+  padding: 8px;
+  border-radius: 4px;
+}
+.tareasTitulo {
+  margin-top: 0;
+  color: rgb(94, 104, 122);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}

@@ -1,7 +1,11 @@
-.title {
-  /* display: flex;
+.cards {
+  display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  width: 800px;
   border: 1px solid #000000;
-  width: 800px; */
+}
+.card {
+  border: 2px solid red;
+  border-radius: 5px;
 }

@@ -1,0 +1,28 @@
+<!-- ESTE DIV ES EL QUE VA A PERMITIR ARRASTRAR Y -->
+<div *ngFor="let tarea of tareas" class="drag">
+  <app-tarea [tarea]="tarea"></app-tarea>
+</div>
+
+<label *ngIf="show; else show2" (click)="show = !show">
+  <i class="fas fa-plus"></i>
+  Añada una tarjeta
+</label>
+
+<ng-template #show2>
+  <form class="form" autocomplete="off">
+    <textarea
+      autofocus
+      name="name"
+      class="form_input"
+      placeholder="Introduzca un titulo para esta tarjeta"
+      cols="30"
+      rows="10"
+      wrap="hard"
+      [(ngModel)]="tarea"
+    ></textarea>
+    <button (click)="sendForm()" class="btn form_add">Añadir tarjeta</button>
+    <button class="btn form_cancel" (click)="show = !show">
+      <i class="fas fa-times"></i>
+    </button>
+  </form>
+</ng-template>
