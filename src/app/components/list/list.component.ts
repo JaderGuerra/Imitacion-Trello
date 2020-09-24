@@ -8,9 +8,9 @@ import { SortablejsOptions } from 'ngx-sortablejs';
 })
 export class ListComponent implements OnInit {
   titulos: any[] = [
-    { name: 'tarea' },
-    { name: ' tarea 2' },
-    { name: 'tarea 3' },
+    { name: 'Cosas que hacer' },
+    { name: ' En proceso' },
+    { name: 'Finalizadas' },
   ];
   items1 = [1, 2, 3, 4, 5];
   items2 = ['a', 'b', 'c', 'd', 'e'];

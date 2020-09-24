@@ -1,11 +1,8 @@
-<div *ngFor="let titulo of titulos">
-  <h3>{{ titulo.name }}</h3>
-  <div class="items1" [sortablejs]="item" [sortablejsOptions]="options">
-    <div *ngFor="let item of items1">{{ item }}</div>
+<div class="cards">
+  <div class="card" *ngFor="let titulo of titulos">
+    <h3>{{ titulo.name }}</h3>
+    <div class="items1" [sortablejs]="item" [sortablejsOptions]="options">
+      <div *ngFor="let item of items1">{{ item }}</div>
+    </div>
   </div>
 </div>
-
-<!-- <h3>list 2</h3>
-<div class="items2" [sortablejs]="items2" [sortablejsOptions]="options">
-  <div *ngFor="let item of items2">{{ item }}</div>
-</div> -->
