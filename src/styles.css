@@ -33,3 +33,78 @@ body {
   font-size: 13px;
   letter-spacing: 0.5px;
 }
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 800px;
+  border: 1px solid #000000;
+}
+.card {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+/* form */
+label {
+  color: rgb(94, 104, 122);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  width: 70%;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 3px;
+}
+label:hover {
+  background-color: rgb(217, 220, 226);
+}
+
+.form_input {
+  height: 50px;
+  display: inline-block;
+  max-width: 95%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  max-height: 90px;
+  min-width: 80%;
+  padding: 5px;
+}
+.btn {
+  padding: 5px 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.form_add {
+  background-color: rgb(90, 172, 68);
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-right: 8px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.form_add:hover {
+  background-color: rgb(44, 165, 10);
+}
+
+/* form */
+/* Tarea */
+.tarea {
+  list-style: none;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 8px;
+  cursor: grabbing;
+  background-color: #ffffff;
+}
+
+/* Tarea */

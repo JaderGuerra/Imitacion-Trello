@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SortablejsOptions } from 'ngx-sortablejs';
 
 @Component({
   selector: 'app-cards',
@@ -17,8 +16,4 @@ export class CardsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  options: SortablejsOptions = {
-    group: 'test',
-  };
 }

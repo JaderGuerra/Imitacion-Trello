@@ -1,6 +1,6 @@
 <!-- ESTE DIV ES EL QUE VA A PERMITIR ARRASTRAR Y -->
-<div *ngFor="let tarea of tareas" class="drag">
-  <app-tarea [tarea]="tarea"></app-tarea>
+<div [sortablejs]="tarea" [sortablejsOptions]="options" class="drag">
+  <app-tarea *ngFor="let tarea of tareas" [tarea]="tarea"></app-tarea>
 </div>
 
 <label *ngIf="show; else show2" (click)="show = !show">

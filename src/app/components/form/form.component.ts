@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+
+import { SortablejsOptions } from 'ngx-sortablejs';
 
 @Component({
   selector: 'app-form',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
+  @Output() enviar = new EventEmitter<any>();
+
   show: boolean = true;
   show2: boolean;
   tarea: string = '';
@@ -14,6 +18,7 @@ export class FormComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
   sendForm() {
     if (this.tarea.trim() == '') {
       alert('si');
@@ -22,4 +27,7 @@ export class FormComponent implements OnInit {
       this.tarea = '';
     }
   }
+  options: SortablejsOptions = {
+    group: 'test',
+  };
 }
