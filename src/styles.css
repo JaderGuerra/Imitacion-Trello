@@ -34,14 +34,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* .cards {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 800px;
-  border: 1px solid #000000;
-}
- */
 /* form */
 label {
   color: rgb(94, 104, 122);

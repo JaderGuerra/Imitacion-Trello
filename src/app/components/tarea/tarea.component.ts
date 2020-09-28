@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-tarea',
@@ -7,7 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TareaComponent implements OnInit {
   @Input() tarea: string;
+  @Output() delete: EventEmitter<string> = new EventEmitter();
+
   show: boolean = false;
   constructor() {}
   ngOnInit(): void {}
+
+  borrar() {
+    this.delete.emit(this.tarea);
+  }
 }

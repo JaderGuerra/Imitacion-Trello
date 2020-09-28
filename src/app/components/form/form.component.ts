@@ -12,7 +12,7 @@ export class FormComponent implements OnInit {
 
   show: boolean = true;
   show2: boolean;
-  tarea: string = '';
+  tarea: string;
   tareas: string[] = [];
 
   constructor() {}
@@ -26,6 +26,9 @@ export class FormComponent implements OnInit {
       this.tareas.push(this.tarea);
       this.tarea = '';
     }
+  }
+  borrar(texto: string) {
+    this.tareas = this.tareas.filter((textoLi) => textoLi !== texto);
   }
   options: SortablejsOptions = {
     group: 'test',
