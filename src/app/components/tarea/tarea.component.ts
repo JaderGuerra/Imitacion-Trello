@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TareaComponent implements OnInit {
   @Input() tarea: string;
+  show: boolean = false;
   constructor() {}
   ngOnInit(): void {}
 }

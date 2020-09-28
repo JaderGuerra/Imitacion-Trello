@@ -1,1 +1,7 @@
-<li draggable="true" class="tarea">{{ tarea }}</li>
+<div class="divTaskAndIcons">
+  <li (click)="show = !show" draggable="true" class="tarea">{{ tarea }}</li>
+  <span class="icons">
+    <i *ngIf="show" class="edit fas fa-pen"></i>
+    <i *ngIf="show" class="delete fas fa-trash-alt"></i>
+  </span>
+</div>
