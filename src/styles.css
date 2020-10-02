@@ -3,7 +3,6 @@
 body {
   background-color: #0079bf;
   font-family: "Ubuntu", sans-serif;
-  /* font-family: 'Dancing Script', cursive; */
 }
 .titulo {
   text-align: center;
@@ -83,7 +82,9 @@ label:hover {
 .form_add:hover {
   background-color: rgb(44, 165, 10);
 }
-
+.drag {
+  padding: 4px 0px;
+}
 /* form */
 
 /* divTaskAndIcons */
