@@ -12,7 +12,7 @@ export class FormComponent implements OnInit {
 
   show: boolean = true;
   show2: boolean;
-  tarea: string;
+  tarea: string = '';
   tareas: string[] = [];
 
   constructor() {}
@@ -21,7 +21,7 @@ export class FormComponent implements OnInit {
 
   sendForm() {
     if (this.tarea.trim() == '') {
-      alert('si');
+      alert('Debes Ingresar una Tarea');
     } else {
       this.tareas.push(this.tarea);
       this.tarea = '';

@@ -12,7 +12,6 @@ export class CardsComponent implements OnInit {
     { name: 'Finalizadas' },
   ];
   show: boolean = true;
-  items1 = [1, 2, 3, 4, 5];
   constructor() {}
 
   ngOnInit(): void {}
